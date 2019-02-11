@@ -37,6 +37,9 @@ select {
   border: none;
   font-size: 1em
 }
+select {
+  height: 50px;
+}
 textarea{
   border-radius: 5px;
   background: #f4f4f4;
@@ -52,11 +55,28 @@ label {
 }
 .container,
 .contact,
-.newsletter,
-.col {
+.newsletter {
   display: flex;
   flex-direction: column;
   width: 90%;
+  margin: auto;
+  flex-basis: 1;
+}
+.contact {
+  padding: 40px 0;
+  border-bottom: 2px solid teal;
+  border-top: 1px solid teal;
+}
+.secondary-header {
+  border-bottom: 2px solid teal;
+  width: 87%;
+  margin: auto;
+  padding: 40px 0;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: auto;
   flex-basis: 1;
 }
@@ -86,5 +106,19 @@ footer {
 /* --- MEDIA QUERIE --- */
 
 @media (min-width:760px) {
+.col {
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.col > label{
+  justify-content: flex-start;
+}
+.col > input,
+.col > select {
+  width: 400px;
+  margin-left: 40px;
+}
 }
