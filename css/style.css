@@ -61,7 +61,7 @@ label {
   flex-direction: column;
   width: 90%;
   margin: auto;
-  flex-basis: 1;
+  flex: 1;
 }
 .contact {
   padding: 40px 0;
@@ -79,7 +79,7 @@ label {
   flex-direction: column;
   width: 100%;
   margin: auto;
-  flex-basis: 1;
+  flex: 1;
 }
 .contact {
   display: flex;
@@ -129,7 +129,7 @@ footer {
 }
 .col > input,
 .col > select {
-  width: 400px;
-  margin-left: 40px;
+  width: 80%;
+
 }
 }
